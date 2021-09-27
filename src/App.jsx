@@ -23,13 +23,32 @@ const Container = styled.div`
 `;
 
 const Left = styled.div`
+  @media (max-width: 1000px) {
+    width: 40%;
+  }
+  @media (max-width: 800px) {
+    display: none;
+  }
+  display: flex;
+  flex-direction: column;
   width: 60%;
-  height: 100%;
   background: url("/hero.jpg");
+  background-position: center;
   background-size: cover;
 `;
 
 const Right = styled.div`
+  @media (max-width: 1200px) {
+    padding: 1em;
+  }
+  @media (max-width: 1000px) {
+    width: 60%;
+    padding: 1em;
+  }
+  @media (max-width: 800px) {
+    width: 100%;
+    padding: 1em;
+  }
   width: 40%;
   height: 100%;
   padding: 4em;
